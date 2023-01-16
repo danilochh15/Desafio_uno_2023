@@ -32,7 +32,7 @@ java -jar nivelTres-0.0.1-SNAPSHOT.jar
 Para ejecutar el proyecto debe estar disponible el puerto *8081*
 
 Para consumir el servicio rest, se debe invocar a la siguiente URL
-```
+```bash
 curl -X GET --header "Accept:application/json" "http://localhost:8081/rest/missedPeriods”
 ```
 
