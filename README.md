@@ -33,7 +33,7 @@ Para ejecutar el proyecto debe estar disponible el puerto *8081*
 
 Para consumir el servicio rest, se debe invocar a la siguiente URL
 ```
-curl -X GET --header "Accept:application/json" "http://127.0.0.1:8081/rest/missedPeriods”
+curl -X GET --header "Accept:application/json" "http://localhost:8081/rest/missedPeriods”
 ```
 
 Resultado en formato JSON:
