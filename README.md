@@ -6,29 +6,38 @@ Este proyecto permite consume un servicio rest de fechas generadas al azar y dev
 Para compilar y ejecutar el proyecto, se necesita tener Java y Maven instalados en el equipo.
 
 En un terminal ir hasta el directorio *nivelTres* y ejecutar los comandos *maven*
-
+```
 mvn clean
+```
+```
 mvn install
+```
+```
 mvn package
+```
 
 # Antes de continuar, se debe levantar el servicio Rest Generador de datos(GDD) en el puerto 8080.
 
 Luego de compilar el proyecto, se debe ingresar al directorio *target* y ejecutar el comando *java*
-
+```
 java -jar .\nivelTres-0.0.1-SNAPSHOT.jar
+```
 
 En mac el comando es:
+```
 java -jar nivelTres-0.0.1-SNAPSHOT.jar
+```
 
 *Nota*
-Para ejecutar el proyecto debe estar disponible el puerto 8081
+Para ejecutar el proyecto debe estar disponible el puerto *8081*
 
 Para consumir el servicio rest, se debe invocar a la siguiente URL
-
+```
 curl -X GET --header "Accept:application/json" "http://127.0.0.1:8081/rest/missedPeriods”
+```
 
 Resultado en formato JSON:
-{
+```{
 "id": 1,
     "fechaCreacion": "2015-07-01",
     "fechaFin": "2021-10-01",
@@ -112,4 +121,3 @@ Resultado en formato JSON:
         "2021-07-01"
 ] }
 ```
-        "2020-02-01",
